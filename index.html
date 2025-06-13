@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch Card Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background decorative hearts -->
+  <div class="bg-hearts">
+    <div class="heart bg-heart-1"></div>
+    <div class="heart bg-heart-2"></div>
+    <div class="heart bg-heart-3"></div>
+    <div class="heart bg-heart-4"></div>
+    <div class="heart bg-heart-5"></div>
+    <div class="heart bg-heart-6"></div>
+  </div>
+
+  <!-- Main container -->
+  <div class="container">
+    <header class="header">
+      <h1 class="main-title">For My Beautiful Girl</h1>
+      <p class="subtitle">I am sorry, and I love you more than words can say...</p>
+    </header>
+    
+    <div class="scratch-card-wrapper">
+      <div class="scratch-card">
+        <div class="hidden-content">
+          <div class="love-message">I Love You Forever</div>
+          <div class="heart-symbol"></div>
+          <div class="sub-message">
+            <p>For my bitter words, there is some kitkat!</p>
+            <div class="payment-msg">
+              <p><strong>₹100.00 received to Gpay</strong></p>
+              <p>(Changes might be shown within 30 minutes)</p>
+            </div>
+          </div>
+        </div>
+        <canvas id="scratchCanvas" width="400" height="250"></canvas>
+      </div>
+    </div>
+    
+    <footer class="instruction">
+      
+      <span>Scratch the silver area above to reveal your surprise!</span>
+      
+    </footer>
+  </div>
+
+  <!-- Floating celebration hearts (hidden initially) -->
+  <div id="celebrationContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
